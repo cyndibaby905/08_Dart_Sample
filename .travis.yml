@@ -1,3 +1,4 @@
 language: dart
 script:
-  - pub run dart_sample
+  - dart bin/dart_sample_before.dart
+  - dart bin/dart_sample.dart
