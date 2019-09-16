@@ -2,3 +2,12 @@ language: dart
 script:
   - dart bin/dart_sample_before.dart
   - dart bin/dart_sample.dart
+after_success:
+  - echo "success"
+after_script:
+  - echo "after_script"
+after_deploy:
+  - echo 'after_deploy'
+deploy:
+  provider: script
+  script: echo 'deploy'
